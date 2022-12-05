@@ -42,6 +42,7 @@ pub fn increment_users_brought(
         users_brought: user_obj.users_brought + 1,
         created_at: user_obj.created_at.clone(),
         last_user_brought_at: timestamp.clone(),
+        owns_nft: user_obj.owns_nft,
     };
 
     let data2 = UserPub {

@@ -7,6 +7,7 @@ pub struct User {
     pub users_brought: u32,
     pub created_at: String,
     pub last_user_brought_at: String,
+    pub owns_nft: bool,
 }
 
 #[derive(Debug, Serialize, Deserialize, Clone)]

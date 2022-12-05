@@ -49,6 +49,7 @@ impl MongoRepo {
                 "users_brought": 0,
                 "created_at": timestamp.clone(),
                 "last_user_brought_at": "",
+                "owns_nft": false,
             }
         };
         let options = FindOneAndUpdateOptions::builder()
@@ -72,6 +73,7 @@ impl MongoRepo {
                 users_brought: 0,
                 created_at: timestamp,
                 last_user_brought_at: "".to_string(),
+                owns_nft: false,
             });
         }
     }
