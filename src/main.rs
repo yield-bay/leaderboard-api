@@ -21,11 +21,7 @@ fn rocket() -> _ {
             .into_iter()
             .map(From::from)
             .collect(),
-        allowed_headers: AllowedHeaders::some(&[
-            "Authorization",
-            "Accept",
-            "Access-Control-Allow-Origin",
-        ]),
+        allowed_headers: AllowedHeaders::all(),
         allow_credentials: true,
         ..Default::default()
     }
