@@ -13,7 +13,7 @@ use repository::mongodb_repo::MongoRepo;
 
 #[launch]
 fn rocket() -> _ {
-    let allowed_origins = AllowedOrigins::some_exact(&["https://list.yieldbay.io"]);
+    let allowed_origins = AllowedOrigins::all(); // some_exact(&["https://list.yieldbay.io"]);
 
     let cors = rocket_cors::CorsOptions {
         allowed_origins,
@@ -22,7 +22,7 @@ fn rocket() -> _ {
             .map(From::from)
             .collect(),
         allowed_headers: AllowedHeaders::all(),
-        allow_credentials: true,
+        // allow_credentials: true,
         ..Default::default()
     }
     .to_cors()
