@@ -35,7 +35,8 @@ Response:
   "hash": "2c835e6173bb69cbd0734351566f60eb4d985be57616053fdb1c49fbaa57915c",
   "users_brought": 0,
   "created_at": "2022-12-03 11:03:37.923813 UTC",
-  "last_user_brought_at": ""
+  "last_user_brought_at": "",
+  "owns_nft": false
 }
 ```
 
